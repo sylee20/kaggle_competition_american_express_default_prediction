@@ -4,7 +4,7 @@
 그래서 다음 노트북을 필사했다:    
 https://www.kaggle.com/code/ambrosm/amex-eda-which-makes-sense
 
-(1) 스스로 수행한 EDA
+1. 스스로 수행한 EDA
 * target 분포: 0이 1보다 훨씬 많으므로 이를 고려한 평가지표를 사용해야 한다.
 * string columns: 'S_2'의 범위를 보면 2017년 3월 - 2018년 3월 총 13달 간의 기록이다.
 customer_ID별 'S_2'의 분포를 살펴보면 customer의 85%는 13개 데이터가 있다. 2017년 3월 - 2018년 3월간 매월 하나씩 데이터가 있는 듯 하다.
@@ -12,7 +12,7 @@ customer_ID별 'S_2'의 분포를 살펴보면 customer의 85%는 13개 데이�
 * integer columns: 칼럼별로 unique한 값의 수를 보면 2 - 309가지 unique한 값을 가진다. 특히 많은  칼럼은 2, 3가지 값을 가진다. 
 * NA값 확인: 많다..
 
-(2) Notebook: Amex EDA which makes sense
+2. Notebook: Amex EDA which makes sense
 * target 분포: NA값과 duplicate 값도 확인. 앞에서 말했듯 0이 1보다 훨씬 많으므로 stratifiedKfold를 사용하는 것이 좋으며, imbalanced distribution에 맞는 평가지표를 사용해야 한다(이미 이 competition의 평가지표가 이에 맞는 평가지표다.).
 * statement date 분포:
 train 데이터와 test 데이터 statement date의 max와 min값
